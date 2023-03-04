@@ -25,12 +25,26 @@ double B = double.Parse(Console.ReadLine());
                           
                           
 //Project 3
-var cycle = new Cycle();
+/*var cycle = new Cycle();
 
 Console.Write("Radius of cycle: R = ");
 double R = double.Parse(Console.ReadLine()); 
 double PI=3.14;
-Console.WriteLine($"\n\tArea of cycle: {cycle.Area(PI,R)}  \n\tPerimeter of cycle: {cycle.Perimeter(PI,R)}");
+Console.WriteLine($"\n\tArea of cycle: {cycle.Area(PI,R)}  \n\tPerimeter of cycle: {cycle.Perimeter(PI,R)}");*/
+                          
+//Project 4
+var student = new Student();
 
-                          
-                          
+student.Name = "Ahmad";
+student.SurName = "Umarzoda";
+student.MidleName = "Bobomurodovich";
+student.BirthDay = Convert.ToDateTime("01-16-2003");
+
+Console.WriteLine($"\n\tSurname: {student.SurName} \n\tName: {student.Name}"+
+                  $"\n\tMidleName: {student.MidleName} \n\tBirthDay: {student.BirthDay}"+
+                  $"\n\tAge: {student.GetAge()}");
+Console.WriteLine($"\n\tFullName: {student.GetFullName()} \n\tShortName: {student.GetShortName()}");
+                     
+                     
+                     
+                     
