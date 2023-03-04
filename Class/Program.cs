@@ -1,21 +1,22 @@
 ﻿using Class;
 
-/*var person = new Person();
-person.FullName = "Ashurov A";
-person.Adress = "sh.Dushanbe";
-person.PhoneNumber = "+992 931 12 12 23";
-person.BirthDay = DateTime.Parse("01.20.1992");*/
+var person = new Person();
 
-var person = new Person
-{
-    Name = "Ashur",
-    LastName = "Ashurov",
-    MiddleName = "Ashurovich",
-    Adress = "sh.Dushanbe",
-    PhoneNumber = "+992 931 12 12 23",
-    BirthDay = DateTime.Parse("01.20.1992")
-};
-person.PrintFullName();
-var age = person.GetAge(DateTime.Now.Year);
-Console.WriteLine($"Adress: {person.Adress} \n PhoneNumber: {person.PhoneNumber} \n" +
-                  $" BirthDay: {person.BirthDay.Date} \n Age: {age}");
+person.Name = "Sharifbek";
+person.LastName = "Mirzozoda";
+person.MiddleName = "Khursand";
+person.BirthDay = Convert.ToDateTime("12-20-1973");
+
+person.PrintFullNameAndAge(person.GetFullName(),person.GetAge());
+
+Console.WriteLine($"ShortName: {person.GetShortName()} " +
+                  $"BirthDay: {person.BirthDay}   Age: {person.GetAge()}");
+
+
+var colculater = new Colculater();
+Console.WriteLine("Number 1: ");
+double A = double.Parse(Console.ReadLine()); 
+Console.WriteLine("Number 2: ");
+double B = double.Parse(Console.ReadLine()); 
+        Console.WriteLine($"\n\tSumma: {colculater.Summa (A,B)} \n\tDifference: {colculater.Difference(A,B)}"+
+                          $"\n\tMultiply: {colculater.Multiply(A,B)}  \n\tDivision: {colculater.Division(A,B)}");

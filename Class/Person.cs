@@ -1,4 +1,4 @@
-namespace Class;
+namespace Class; // Class is project name
 
 public class Person
 {
@@ -6,29 +6,24 @@ public class Person
     public string LastName { get; set; }
     public string MiddleName { get; set; }
     public DateTime BirthDay { get; set; }
-    public string Adress { get; set; }
-    public string PhoneNumber { get; set; }
 
-    public int GetAge(int yearNow)
+    public int GetAge()
     {
-        /*var age = DateTime.Now.Year - BirthDay.Year;
-        return age;*/
-        return yearNow - BirthDay.Year;
+        return DateTime.Now.Year - BirthDay.Year;
     }
-    
+
     public string GetFullName()
     {
-        return LastName + " " + Name + " " + MiddleName;
+        return $"{LastName} {Name} {MiddleName}";
+    }
+
+    public string GetShortName()
+    {
+        return $"{LastName} {Name.First()}.{MiddleName.First()}.";
     }
     
-    public void PrintFullName()
+    public void PrintFullNameAndAge(string fullName, int age)
     {
-        Console.WriteLine(GetFullName());
-    }
-    
-        
-    public string GetShortFullName()
-    {
-        return LastName + " " + Name.First() + "." + MiddleName.First()+".";
+        Console.WriteLine(fullName+" Age: "+age);
     }
 }
