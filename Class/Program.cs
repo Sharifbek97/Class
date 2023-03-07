@@ -15,13 +15,13 @@ Console.WriteLine($"ShortName: {person.GetShortName()} " +
                   $"BirthDay: {person.BirthDay}   Age: {person.GetAge()}");*/
 
 //Project 2
-/*var colculater = new Colculater();
+/*var calculator = new Calculator();
 Console.WriteLine("Number 1: ");
 double A = double.Parse(Console.ReadLine()); 
 Console.WriteLine("Number 2: ");
 double B = double.Parse(Console.ReadLine()); 
-        Console.WriteLine($"\n\tSumma: {colculater.Summa (A,B)} \n\tDifference: {colculater.Difference(A,B)}"+
-                          $"\n\tMultiply: {colculater.Multiply(A,B)}  \n\tDivision: {colculater.Division(A,B)}");*/
+        Console.WriteLine($"\n\tSumma: {calculator.Addition (A,B)} \n\tDifference: {calculator.Subtraction(A,B)}"+
+                          $"\n\tMultiply: {calculator.Multiply(A,B)}  \n\tDivision: {calculator.Division(A,B)}");*/
                           
                           
 //Project 3

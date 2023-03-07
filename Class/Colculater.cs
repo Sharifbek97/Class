@@ -1,12 +1,12 @@
 namespace Class;
 
-public class Colculater
+public class Calculator
 {
-    public double Summa (double A,double B)
+    public double Addition (double A,double B)
     {
         return A+B;
     }
-    public double Difference (double A,double B)
+    public double Subtraction (double A,double B)
     {
         return A-B;
     }
