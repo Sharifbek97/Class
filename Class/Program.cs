@@ -39,11 +39,13 @@ student.Name = "Ahmad";
 student.SurName = "Umarzoda";
 student.MidleName = "Bobomurodovich";
 student.BirthDay = Convert.ToDateTime("01-16-2003");
+student.GetPrintStudent(student.GetAge(), student.GetFullName(),  student.GetShortName());
 
-Console.WriteLine($"\n\tSurname: {student.SurName} \n\tName: {student.Name}"+
+
+/*Console.WriteLine($"\n\tSurname: {student.SurName} \n\tName: {student.Name}"+
                   $"\n\tMidleName: {student.MidleName} \n\tBirthDay: {student.BirthDay}"+
                   $"\n\tAge: {student.GetAge()}");
-Console.WriteLine($"\n\tFullName: {student.GetFullName()} \n\tShortName: {student.GetShortName()}");
+Console.WriteLine($"\n\tFullName: {student.GetFullName()} \n\tShortName: {student.GetShortName()}");*/
                      
                      
                      

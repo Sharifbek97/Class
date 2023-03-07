@@ -7,6 +7,7 @@ public class Student
     public string MidleName { get; set; }
     public DateTime BirthDay { get; set; }
 
+    
     public int GetAge()
     {
         return DateTime.Now.Year - BirthDay.Year;
@@ -20,5 +21,11 @@ public class Student
     {
         return $"{SurName} {Name.First()}.{MidleName.First()}.";
     }
+    public void GetPrintStudent(int Age, string fullName, string ShortName)
+    {
+        Console.WriteLine("\n\tFullName: "+fullName+"\n\tShortName: "+ShortName+"\n\tBirthDay:"+BirthDay+"\n\tAge: "+Age);
+       
+    }
 }
+
 
