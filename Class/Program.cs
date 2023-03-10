@@ -65,12 +65,23 @@ if ( book.YearOfPublication>= 2021)
 else {Console.WriteLine(false);}*/
 
     //Project 6
-var complexNumber = new ComplexNumber();
+/*var complexNumber = new ComplexNumber();
 Console.WriteLine("Part of real: ");
 int a = int.Parse(Console.ReadLine()); 
 Console.WriteLine("Part of imaginar: ");
 int b = int.Parse(Console.ReadLine()); 
 
-Console.WriteLine($"Constructed complex number: {complexNumber.GetReal(a)}i+{complexNumber.GetImaginary(b)}");
+Console.WriteLine($"Constructed complex number: {complexNumber.GetReal(a)}i+{complexNumber.GetImaginary(b)}");*/
 
+//Project 7
+var triangle = new Triangle();
+
+Console.Write("a= ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("b= ");
+int b = int.Parse(Console.ReadLine());
+Console.Write("c= ");
+int c = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Perimeter of triangle: {triangle.Perimeter(a,b,c)}  \nArea of triangle: {triangle.Area(a,b,c)}");
 
