@@ -33,7 +33,7 @@ double PI=3.14;
 Console.WriteLine($"\n\tArea of cycle: {cycle.Area(PI,R)}  \n\tPerimeter of cycle: {cycle.Perimeter(PI,R)}");*/
                           
 //Project 4
-var student = new Student();
+/*var student = new Student();
 
 student.Name = "Ahmad";
 student.SurName = "Umarzoda";
@@ -48,5 +48,29 @@ student.GetPrintStudent(student.GetAge(), student.GetFullName(),  student.GetSho
 Console.WriteLine($"\n\tFullName: {student.GetFullName()} \n\tShortName: {student.GetShortName()}");*/
                      
                      
-                     
-                     
+//Project 5
+/*var book = new Book();
+
+book.Name = "Pry Algebra 2";
+book.Author = "T. Gafur, K.Mustafo, K.Murat.";
+book.YearOfPublication=2006;
+book.Page = 263;
+book.PrintBook(book.GetNameAuthor(),book.GetYearOfPublication(), book.GetPage());
+Console.WriteLine("\n\nIs new the year of writing the book ");
+bool year = true;
+if ( book.YearOfPublication>= 2021)
+{
+   Console.WriteLine(year); 
+}
+else {Console.WriteLine(false);}*/
+
+    //Project 6
+var complexNumber = new ComplexNumber();
+Console.WriteLine("Part of real: ");
+int a = int.Parse(Console.ReadLine()); 
+Console.WriteLine("Part of imaginar: ");
+int b = int.Parse(Console.ReadLine()); 
+
+Console.WriteLine($"Constructed complex number: {complexNumber.GetReal(a)}i+{complexNumber.GetImaginary(b)}");
+
+

@@ -23,7 +23,8 @@ public class Student
     }
     public void GetPrintStudent(int Age, string fullName, string ShortName)
     {
-        Console.WriteLine("\n\tFullName: "+fullName+"\n\tShortName: "+ShortName+"\n\tBirthDay:"+BirthDay+"\n\tAge: "+Age);
+        Console.WriteLine("\n\tFullName: "+fullName+"\n\tShortName: "+ShortName+"\n\tBirthDay:"+BirthDay+
+                          "\n\tAge: "+Age);
        
     }
 }
